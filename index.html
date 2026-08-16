@@ -145,7 +145,7 @@
       </div>
       <form class="contact" id="contactForm">
         <!-- Web3Forms: replace the access_key below with your own (see README). -->
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="access_key" value="98bfb2ed-8d79-4544-a628-d7bb3f0c5946" />
         <input type="hidden" name="subject" value="New message from the Molbhav website" />
         <input type="hidden" name="from_name" value="Molbhav website" />
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
@@ -203,7 +203,7 @@
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const key = form.access_key.value;
-      if (!key || key === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+      if (!key || key === '98bfb2ed-8d79-4544-a628-d7bb3f0c5946') {
         statusEl.textContent = 'Contact form not configured yet. Please email us directly.';
         statusEl.className = 'form-status err';
         return;

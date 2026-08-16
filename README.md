@@ -20,9 +20,9 @@ molbhav-site/
    delivered, and copy the **Access Key** they email you (no account needed).
 2. Open `index.html`, find:
    ```html
-   <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+   <input type="hidden" name="access_key" value="98bfb2ed-8d79-4544-a628-d7bb3f0c5946" />
    ```
-   and replace `YOUR_WEB3FORMS_ACCESS_KEY` with your key.
+   and replace `98bfb2ed-8d79-4544-a628-d7bb3f0c5946` with your key.
 
 That's it — submissions now arrive in your inbox. Until you do this, the form
 shows a friendly "email us directly" message instead of failing.
