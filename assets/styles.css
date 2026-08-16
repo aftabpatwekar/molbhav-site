@@ -133,6 +133,22 @@ section { position: relative; z-index: 1; padding: 72px 0; }
 .tag.gold h3, .tag.gold p, .tag.cream p { color: var(--ink); }
 .tag p { margin-top: 6px; font-size: 15px; color: var(--muted); }
 
+/* ---- download ---- */
+.download-card {
+  max-width: 520px; margin: 0 auto; text-align: center;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 40px 32px;
+}
+.btn-lg { padding: 16px 32px; font-size: 17px; }
+.dl-meta { color: var(--muted); font-size: 14px; margin-top: 14px; }
+.dl-steps {
+  text-align: left; margin: 24px auto 0; max-width: 400px;
+  color: var(--text); padding-left: 22px;
+}
+.dl-steps li { margin-bottom: 10px; font-size: 15px; }
+.dl-steps strong { color: var(--marigold-light); }
+.dl-note { color: var(--muted); font-size: 13px; margin-top: 18px; }
+
 /* ---- contact ---- */
 .contact-wrap { max-width: 640px; margin: 0 auto; }
 form.contact {
