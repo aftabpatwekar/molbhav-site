@@ -202,8 +202,10 @@
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const key = form.access_key.value;
-      if (!key || key === '98bfb2ed-8d79-4544-a628-d7bb3f0c5946') {
+      const key = form.access_key.value.trim();
+      // A valid Web3Forms access key is a UUID; anything else = not set up yet.
+      const configured = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(key);
+      if (!configured) {
         statusEl.textContent = 'Contact form not configured yet. Please email us directly.';
         statusEl.className = 'form-status err';
         return;

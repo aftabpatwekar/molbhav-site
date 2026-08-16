@@ -14,18 +14,20 @@ molbhav-site/
     └── app-icon.png
 ```
 
-## 1. Wire up the contact form (Web3Forms — free, no backend)
+## 1. Contact form (Web3Forms — free, no backend)
+
+The form is already wired to Web3Forms. To point it at a different inbox:
 
 1. Go to <https://web3forms.com>, enter the email where you want messages
    delivered, and copy the **Access Key** they email you (no account needed).
-2. Open `index.html`, find:
+2. In `index.html`, update the `access_key` value on this line with your key:
    ```html
-   <input type="hidden" name="access_key" value="98bfb2ed-8d79-4544-a628-d7bb3f0c5946" />
+   <input type="hidden" name="access_key" value="PASTE-YOUR-KEY-HERE" />
    ```
-   and replace `98bfb2ed-8d79-4544-a628-d7bb3f0c5946` with your key.
+   Only change the `value` — do not touch the JavaScript below it.
 
-That's it — submissions now arrive in your inbox. Until you do this, the form
-shows a friendly "email us directly" message instead of failing.
+Submissions then arrive in your inbox. If the key isn't a valid Web3Forms key,
+the form shows a friendly "email us directly" message instead of failing.
 
 ## 2. Publish on GitHub Pages
 
